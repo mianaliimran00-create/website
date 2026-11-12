@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus AI Enterprises LLC | Kitchenware & Home Essentials</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #222; max-width: 850px; margin: 0 auto; padding: 30px 20px; background-color: #ffffff; }
-        header { border-bottom: 2px solid #1a365d; padding-bottom: 20px; margin-bottom: 35px; }
-        h1 { margin: 0 0 8px 0; color: #1a365d; font-size: 28px; }
-        .tagline { margin: 0; color: #555; font-size: 16px; }
-        h2 { color: #1a365d; font-size: 20px; margin-top: 0; }
-        section { margin-bottom: 35px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; }
-        .card h3 { margin-top: 0; color: #2d3748; font-size: 17px; }
-        .contact-box { background: #f8fafc; padding: 20px; border-radius: 6px; border-left: 4px solid #1a365d; }
-        footer { border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; font-size: 13px; color: #555; }
-        footer p { margin-bottom: 12px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus AI Enterprises LLC | Kitchenware & Home Essentials</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;color:#1e293b;background:#fff}
+nav{background:#fff;border-bottom:1px solid #e2e8f0;padding:16px 24px;position:sticky;top:0;z-index:100}
+.nav-wrap{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font-size:20px;font-weight:800;color:#1e293b;text-decoration:none}
+.logo span{color:#d97706}
+.nav-links a{text-decoration:none;color:#1e293b;font-weight:500;margin-left:20px;font-size:14px}
+.hero{background:linear-gradient(rgba(15,23,42,.78),rgba(15,23,42,.82)),url('https://unsplash.com') center/cover;color:#fff;text-align:center;padding:85px 20px}
+.hero h1{font-size:36px;max-width:740px;margin:0 auto 14px;line-height:1.2}
+.hero p{font-size:17px;max-width:600px;margin:0 auto 26px;color:#e2e8f0}
+.btn{display:inline-block;background:#d97706;color:#fff;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600}
+.trust{background:#f8fafc;border-bottom:1px solid #e2e8f0;padding:20px}
+.trust-grid,.grid,.review-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.trust-grid{text-align:center}
+.trust-item strong{display:block;font-size:15px}
+.trust-item span{font-size:13px;color:#64748b}
+.sec{max-width:1100px;margin:0 auto;padding:60px 20px}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 40px}
+.sec-head h2{font-size:28px;margin-bottom:8px}
+.sec-head p{color:#64748b}
+.card{border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;box-shadow:0 4px 6px -1px rgba(0,0,0,.05)}
+.card img{width:100%;height:210px;object-fit:cover;display:block}
+.card-body{padding:20px}
+.badge{display:inline-block;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;margin-bottom:8px}
+.card-body h3{font-size:18px;margin-bottom:8px}
+.card-body p{font-size:14px;color:#64748b;margin-bottom:12px}
+.stars{color:#f59e0b;font-size:14px;font-weight:600}
+.about{background:#f8fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0}
+.about-grid{max-width:1100px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:center}
+.about-grid img{width:100%;border-radius:10px}
+.about-grid h2{font-size:28px;margin-bottom:14px}
+.about-grid p{margin-bottom:14px;color:#334155;font-size:15px}
+.rev{background:#f8fafc;padding:22px;border-radius:8px;border:1px solid #e2e8f0}
+.rev p{font-style:italic;font-size:14px;margin-bottom:10px;color:#334155}
+.rev strong{font-size:13px}
+.contact-box{background:#1e293b;color:#fff;border-radius:12px;padding:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.contact-box h2{font-size:25px;margin-bottom:10px}
+.contact-box p{color:#cbd5e1;font-size:15px;margin-bottom:10px}
+.contact-box a{color:#fbbf24;text-decoration:none}
+footer{background:#0f172a;color:#94a3b8;padding:40px 20px;font-size:13px}
+.foot-in{max-width:1100px;margin:0 auto}
+.foot-in p{margin-bottom:12px}
+.foot-bot{border-top:1px solid #1e293b;padding-top:18px;margin-top:18px;color:#cbd5e1}
+</style>
 </head>
 <body>
-
-<header>
-    <h1>Nexus AI Enterprises LLC</h1>
-    <p class="tagline">Quality Kitchenware, Culinary Tools &amp; Everyday Home Essentials</p>
-</header>
-
-<section id="about">
-    <h2>About Our Company</h2>
-    <p><strong>Nexus AI Enterprises LLC</strong> is a United States registered e-commerce retail company specializing in thoughtfully designed kitchenware and culinary accessories. We source, brand, and distribute durable everyday kitchen tools directly to consumers through major online marketplaces, including Amazon.</p>
-    <p>Our mission is to provide home cooks and families with practical, food-safe, and reliable kitchen products backed by responsive customer support.</p>
-</section>
-
-<section id="products">
-    <h2>Our Product Categories</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Food Preparation &amp; Utensils</h3>
-            <p>Ergonomic cooking utensils, measuring tools, peelers, and prep gadgets engineered for daily kitchen efficiency and durability.</p>
-        </div>
-        <div class="card">
-            <h3>Kitchen Organization &amp; Storage</h3>
-            <p>Space-saving countertop organizers, pantry storage containers, and drawer inserts designed to keep modern kitchens tidy.</p>
-        </div>
-        <div class="card">
-            <h3>Bakeware &amp; Dining Accessories</h3>
-            <p>Heat-resistant silicone mats, serving accessories, and table essentials crafted from high-grade, BPA-free materials.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Corporate &amp; Customer Support</h2>
-    <div class="contact-box">
-        <p><strong>Legal Entity:</strong> Nexus AI Enterprises LLC</p>
-        <p><strong>Registered Business Address:</strong> 30 N Gould St Ste 65988, Sheridan, WY 82801, United States</p>
-        <p><strong>Email Support:</strong> <a href="mailto:admin@nexusaienterprises.com">admin@nexusaienterprises.com</a></p>
-        <p><strong>Customer Service Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM MST</p>
-    </div>
-</section>
-
-<footer>
-    <p><strong>&copy; 2026 Nexus AI Enterprises LLC. All Rights Reserved.</strong></p>
-    <p><strong>Privacy Policy:</strong> Nexus AI Enterprises LLC respects your privacy. Any contact details shared via email are used strictly to answer product inquiries, provide warranty assistance, or fulfill customer support requests. We never sell, rent, or distribute customer data to third parties.</p>
-    <p><strong>Terms of Service &amp; Refunds:</strong> All retail orders placed through our authorized marketplace storefronts (including Amazon) are governed by the respective marketplace's buyer protection, shipping, and return policies. For direct wholesale or product inquiries, please contact admin@nexusaienterprises.com.</p>
-</footer>
-
+<nav><div class="nav-wrap"><a href="#" class="logo">Nexus AI <span>Enterprises LLC</span></a><div class="nav-links"><a href="#products">Products</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div></div></nav>
+<section class="hero"><h1>Modern Kitchenware Built for Everyday Cooking</h1><p>Nexus AI Enterprises LLC designs, curates, and distributes durable culinary tools, food prep essentials, and smart kitchen organizers across the United States.</p><a href="#products" class="btn">Explore Our Collection</a></section>
+<div class="trust"><div class="trust-grid"><div class="trust-item"><strong>100% Food-Grade Materials</strong><span>BPA-free, FDA-compliant kitchenware</span></div><div class="trust-item"><strong>US Registered Business</strong><span>Headquartered in Sheridan, Wyoming</span></div><div class="trust-item"><strong>Fast Marketplace Fulfillment</strong><span>Available nationwide via Amazon</span></div><div class="trust-item"><strong>Dedicated Customer Care</strong><span>Responsive support &amp; warranty</span></div></div></div>
+<section id="products" class="sec"><div class="sec-head"><h2>Featured Product Categories</h2><p>Engineered for home chefs who value durability, clean design, and effortless organization.</p></div><div class="grid"><div class="card"><img src="https://unsplash.com" alt="Kitchen Utensils"><div class="card-body"><span class="badge">Best Seller</span><h3>Precision Prep &amp; Utensil Sets</h3><p>Heat-resistant silicone spatulas, stainless steel whisks, peelers, and measuring spoons built for daily high-heat cooking.</p><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8/5 Marketplace Rating</div></div></div><div class="card"><img src="https://unsplash.com" alt="Pantry Storage"><div class="card-body"><span class="badge">Organization</span><h3>Airtight Pantry &amp; Drawer Storage</h3><p>Stackable food storage containers, spice rack organizers, and drawer dividers that maximize countertop and cabinet space.</p><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9/5 Marketplace Rating</div></div></div><div class="card"><img src="https://unsplash.com" alt="Bakeware"><div class="card-body"><span class="badge">Essentials</span><h3>Non-Stick Bakeware &amp; Accessories</h3><p>Reusable silicone baking mats, cooling racks, and oven-safe accessories designed for even heat distribution.</p><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.7/5 Marketplace Rating</div></div></div></div></section>
+<section id="about" class="about"><div class="about-grid"><img src="https://unsplash.com" alt="Modern Kitchen"><div><h2>About Nexus AI Enterprises LLC</h2><p><strong>Nexus AI Enterprises LLC</strong> is a US-registered e-commerce retail company focused on delivering practical, high-utility kitchenware and household accessories to everyday consumers.</p><p>We partner with vetted manufacturers to source food-safe, long-lasting kitchen products and distribute them directly to customers across North America through leading online retail marketplaces, including Amazon.</p></div></div></section>
+<section id="reviews" class="sec"><div class="sec-head"><h2>What Our Customers Say</h2><p>Feedback from verified home cooks using our kitchen essentials every day.</p></div><div class="review-grid"><div class="rev"><p>"The silicone utensil set holds up great against high heat and doesn't scratch my non-stick pans. Very easy to clean."</p><strong>&mdash; Sarah M., Verified Amazon Buyer</strong></div><div class="rev"><p>"Completely transformed my messy pantry. The airtight containers keep dry goods fresh and stack neatly without slipping."</p><strong>&mdash; David R., Verified Amazon Buyer</strong></div><div class="rev"><p>"Fast shipping and great packaging. You can immediately feel the build quality compared to cheaper kitchen gadgets."</p><strong>&mdash; Elena K., Verified Amazon Buyer</strong></div></div></section>
+<section id="contact" class="sec"><div class="contact-box"><div><h2>Corporate &amp; Support Inquiries</h2><p>Have a question about an order, product warranty, or wholesale partnership? Reach out to our US customer support team directly.</p></div><div><p><strong>Legal Company Name:</strong> Nexus AI Enterprises LLC</p><p><strong>Registered Address:</strong> 30 N Gould St Ste 65988, Sheridan, WY 82801, United States</p><p><strong>Official Email:</strong> <a href="mailto:admin@nexusaienterprises.com">admin@nexusaienterprises.com</a></p><p><strong>Support Hours:</strong> Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM MST</p></div></div></section>
+<footer><div class="foot-in"><p><strong>Privacy Policy:</strong> Nexus AI Enterprises LLC values your privacy. Information submitted via email is used exclusively to respond to customer support inquiries, handle warranty claims, or process business communications. We never sell, rent, or share personal information with third parties.</p><p><strong>Terms of Service &amp; Returns:</strong> Retail purchases made through our authorized storefront on Amazon are protected by Amazon's standard shipping, refund, and return policies. For direct product assistance or corporate verification inquiries, contact admin@nexusaienterprises.com.</p><div class="foot-bot">&copy; 2026 Nexus AI Enterprises LLC. All Rights Reserved. | 30 N Gould St Ste 65988, Sheridan, WY 82801</div></div></footer>
 </body>
 </html>
